@@ -1,13 +1,39 @@
-import java.io.File
-import java.math.BigInteger
-import java.security.MessageDigest
+/**
+ * read a line or return empty string
+ */
+fun readLn() = readLine() ?: ""
 
 /**
- * Reads lines from the given input txt file.
+ * read space separated words
  */
-fun readInput(name: String) = File("src", "$name.txt").readLines()
+fun readLns() = readLn().split(" ")
 
 /**
- * Converts string to md5 hash.
+ * read an integer
  */
-fun String.md5(): String = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteArray())).toString(16)
+fun readInt() = readLn().toInt()
+
+/**
+ * read space separated integers
+ */
+fun readInts() = readLns().map { it.toInt() }
+
+/**
+ * read a long integer
+ */
+fun readLong() = readLn().toLong()
+
+/**
+ * read space separated long integers
+ */
+fun readLongs() = readLns().map { it.toLong() }
+
+/**
+ * read a double value
+ */
+fun readDouble() = readLn().toDouble()
+
+/**
+ * read space separated double values
+ */
+fun readDoubles() = readLns().map { it.toDouble() }
