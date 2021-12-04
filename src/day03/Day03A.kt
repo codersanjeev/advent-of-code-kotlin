@@ -1,3 +1,5 @@
+package day03
+
 fun main() {
     val submarineData = mutableListOf<String>()
     while (true) {

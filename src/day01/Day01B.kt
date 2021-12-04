@@ -1,3 +1,5 @@
+package day01
+
 fun main() {
     val numbersArray = mutableListOf<Int>()
     while (true) {

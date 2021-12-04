@@ -1,3 +1,5 @@
+package day02
+
 fun main() {
     var forwardAmount = 0
     var depthAmount = 0

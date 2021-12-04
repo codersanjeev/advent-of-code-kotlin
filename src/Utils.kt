@@ -1,3 +1,14 @@
+import java.io.BufferedReader
+import java.io.File
+
+/**
+ * get BufferedReader from file at given filePath
+ */
+fun getFileReader(filePath: String): BufferedReader {
+    val inputFile = File(filePath)
+    return inputFile.bufferedReader()
+}
+
 /**
  * read a line or return empty string
  */

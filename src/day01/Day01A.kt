@@ -1,3 +1,5 @@
+package day01
+
 fun main() {
     var previousNumber: Int? = null
     var answer = 0
